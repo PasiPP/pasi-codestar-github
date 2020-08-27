@@ -45,6 +45,15 @@ Resources:
           Properties:
             Path: /
             Method: post
+
+  TheTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      Tags:
+        - Key: Owner
+          Value: Pasi
+      TopicName: PasiTopicPipe
+
   LambdaExecutionRole:
     Description: Creating service role in IAM for AWS Lambda
     Type: AWS::IAM::Role
