@@ -52,7 +52,7 @@ Resources:
       Tags:
         - Key: Owner
           Value: Pasi
-      TopicName: PasiTopicPipe
+      TopicName: PasiSNSTopic
 
   LambdaExecutionRole:
     Description: Creating service role in IAM for AWS Lambda
